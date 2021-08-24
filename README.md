@@ -11,7 +11,7 @@ $ npm install
 ```
 
 # Usage
-** :warning: This should be run only after running mern-todo-backend. :warning: **\
+**:warning: This should be run only after running mern-todo-backend. :warning:**\
 Run the start script with `npm run start` and navigate to http://localhost:3000.
 ```
 $ npm run start
