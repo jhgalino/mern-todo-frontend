@@ -36,10 +36,12 @@ const ToDoInput = props => {
     }
 
     return(
-        <form onSubmit={handleSubmit}>
-            <input type="text" name="todo" value={value} onChange={handleChange}></input>
-            <button type="button" onClick={handleDelete}>Delete</button>
-        </form>
+        <div className="">
+            <form onSubmit={handleSubmit} className="space-x-5">
+                <input type="text" name="todo" value={value} onChange={handleChange}className="border-b border-gray-900 text-2xl"></input>
+                <button type="button" onClick={handleDelete} className="border border-gray-900 text-xl rounded p-1">Delete</button>
+            </form>
+        </div>
     )
 }
 

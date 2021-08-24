@@ -17,13 +17,16 @@ const TodoBox = props => {
         }).catch((err) => {
             console.log(err);
         });
+        setValue('');
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" name="todo" value={value} placeholder="Add todo" onChange={handleChange}></input>
-            <button type="submit">Add!</button>
-        </form>
+        <div className="w-auto">
+            <form onSubmit={handleSubmit} className="space-x-5">
+                <input type="text" name="todo" value={value} placeholder="Add todo" onChange={handleChange} className="border-gray-900 border-b text-3xl"></input>
+                <button type="submit" className="border border-gray-900 text-2xl rounded p-1">Add!</button>
+            </form>
+        </div>
     );
 }
 

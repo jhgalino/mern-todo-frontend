@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ToDoInput from "./ToDoInput";
 import axios from 'axios';
+import '../css/TodoList.css'
 
 const TodoList = props => {
     const [todos, setTodos] = useState([]);
@@ -20,7 +21,7 @@ const TodoList = props => {
     });
 
     return(
-        <ul>
+        <ul id="no-bullets">
             {listItems}
         </ul>
     );
